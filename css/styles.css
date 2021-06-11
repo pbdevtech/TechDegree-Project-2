@@ -1,0 +1,60 @@
+/* Base Element Styles*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: gainsboro;
+    margin-right: 1em;
+    margin-left: 1em;
+    text-align: center;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+
+/*Class Styles*/
+
+
+
+.portfolio-container {   
+    background-color: ghostwhite;
+}
+
+.portfolio, .nav-container {    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: ghostwhite;
+    padding: 15px;
+}
+
+.main-nav{
+    border: 5px auto;
+    border-color: black;
+    border-width: 2px;
+
+}
+
+
+
+
+
+
+
+
+/*@media Styles*/
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px){
+
+}
