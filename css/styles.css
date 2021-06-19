@@ -1,58 +1,131 @@
-/* Base Element Styles*/
+/*Element Styles*/
 * {
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(141, 137, 137);
+    font-size: 16px;
 }
 
 body {
     line-height: 1.6;
-    background-color: gainsboro;
-    margin-right: 1em;
-    margin-left: 1em;
+    background-color: gainsboro;    
+    margin: 1em 0;
     text-align: center;
 }
 
 img {
     width: auto;
     height: auto;
-    max-width: 100%;
+    max-width: 100%;    
 }
 
-
+a,
+a::after,
+a:hover::after {
+   text-decoration: none; 
+}
 
 
 /*Class Styles*/
 
-
-
-.portfolio-container {   
-    background-color: ghostwhite;
+.portfolio,
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    width: 90%;
+    margin: 1rem 1rem;  
 }
 
-.portfolio, .nav-container {    
+.nav .item:not(.stu-nam) {
+    background-color: ghostwhite;
+    margin: 5px 0;
+}
+
+.nav .stu-nam {
+    background-color: none;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.intro {
+    margin: 3rem 0;
+}
+
+.stu-pic{
+    width: 75%;
+    height: 75%;
+    margin: 1rem;
+}
+
+.port-container {   
+    background-color: ghostwhite;
+    margin: 2rem 0;
+}
+
+.portfolio .item {
+    padding-bottom: 2rem;
+}
+
+.main-heading{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.heading {
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-nav {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(10, 10, 10, 0.1);
+    font-weight: bold;
+}
+
+.contact {
+    padding-bottom: 0;
+}
+
+.footer-nav .item:not(.sm-sc) {
+    display: none;
+}
+
+
+ /* display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: ghostwhite;
-    padding: 15px;
-}
-
-.main-nav{
-    border: 5px auto;
-    border-color: black;
-    border-width: 2px;
-
-}
-
-
-
-
+    padding: none;    */
 
 
 
 
 /*@media Styles*/
 @media (min-width: 768px) {
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .nav .stu-nam {
+        flex-grow: 4;
+        align-self: flex-start;
+    }
+
+
     
+
+
 }
 
 @media (min-width: 1024px){
