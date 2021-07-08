@@ -86,8 +86,15 @@ a:hover::after {
 
    .main-nav .item {
         background-color: gainsboro ;
-    }   
+    }
 
+    .footer-nav {
+        display: contents;
+    }
+
+    .item5{
+        display: none;
+    }
 }
 
 @media (min-width: 1024px){
@@ -97,6 +104,8 @@ a:hover::after {
         justify-content: space-between;
         
     }
+
+    
 
 
 
