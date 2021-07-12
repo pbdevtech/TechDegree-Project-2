@@ -8,8 +8,7 @@
 
 body {
     line-height: 1.6;
-    background-color: gainsboro;    
-    
+    background-color: gainsboro;   
     text-align: center;
 }
 
@@ -87,6 +86,11 @@ footer {
 
 /*@media Styles*/
 @media (min-width: 768px) {
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
 
     .main-header,
     .main-nav,
