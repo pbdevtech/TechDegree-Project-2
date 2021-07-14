@@ -8,27 +8,45 @@
 
 body {
     line-height: 1.6;
-    background-color: gainsboro;   
+    background-color: rgb(243, 243, 243);   
     text-align: center;
+}
+
+.main-header {
+    font-weight: bold;
+}
+
+h1{
+    margin: 1rem 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    margin: auto;    
+    padding: .5rem;
 }
 
 h3 {
     margin: 0;
 }
 
+p {
+    margin: auto;
+}
+
+section {
+    padding: 2rem 0;
+    
+}
+
+article {
+    padding: 2rem 1rem;
+}
+
 img {
     width: auto;
     height: auto;
     max-width: 100%;    
-}
-
-/*ul,
-li {
-    margin: 1rem 1rem;
-}*/
-
-h1{
-    margin: 1rem 1rem;
 }
 
 a,
@@ -38,12 +56,18 @@ a:hover::after {
 }
 
 footer {
-    margin: 0 1rem;
+    padding: 1rem;    
 }
+
+span {
+    font-weight: bold;
+}
+
 
 
 /*Class Styles*/
 
+/*Header - Navigation*/
 .main-nav .item{
     background-color: ghostwhite;
     margin: 5px 1rem;
@@ -52,29 +76,30 @@ footer {
 .stu-pic{
     width: 75%;
     height: 75%;
-    margin: 1rem;
+    
 }
 
-.portfolio-container {
-    background-color: ghostwhite;
-    margin: 1rem 0;
+/*Portfolio - Section*/
+.portfolio-section {
+    background-color: ghostwhite;    
 }
 
-.itemp {    
-    padding: 1rem;
+/*Contact - Section*/
+.contact-info {
+    padding: 1rem 0 0;
+}
+
+.phone {
+    margin-top: 1rem;
 }
 
 /*Footer*/
-.contact-sec {
-    padding: 1rem 0;
-}
-
 .footer-nav { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;  
-    padding: 1rem 0;        
+    padding: 2rem 0;        
     border-top: 1px solid rgba(10, 10, 10, 0.1);
     font-weight: bold;
 }
@@ -87,32 +112,22 @@ footer {
 /*@media Styles*/
 @media (min-width: 768px) {
 
-    body {
-        width: 90%;
-        margin: auto;
-    }
-
     .main-header,
     .main-nav,
     .foot-nav,    
     .portfolio-container,
     .intro {
         display: flex;        
-    }
-
-   /* .intro-item {
-        flex: 1 50%;
-        padding: 1rem;
-    }*/
-
-    .stu-pic {
-        flex: 2;
-    }
+    }  
 
     .intro {
         flex-direction: row-reverse;
         margin: 0 1rem;
         padding: 1rem;
+    }
+
+    .stu-pic {
+        flex: 2;
     }
 
     /*Header Nav Bar*/
@@ -122,30 +137,20 @@ footer {
     }
 
     .main-nav .item{
-        background-color: gainsboro;
+        background-color: rgb(243, 243, 243);
     }
 
 
 
     /*Portfolio Section*/
-    .itemp {        
+    .portfolio-item {        
         flex: 1 50%;        
     }
     .portfolio-container {
         flex-wrap: wrap;        
     }
 
-    .portfolio-section {
-        background: ghostwhite;
-        margin: 1rem;
-    }
-
-    .portfolio-heading{
-        padding: 1rem;
-    }
-
-
-
+    
     /*Footer Nav Bar*/
     .footer-nav {                
         flex-direction: row;
@@ -155,17 +160,19 @@ footer {
         font-weight: bold;
     }
 
-    .foot-nav .item {
-        padding: 0 1rem;
-    }
-
     .foot-nav .item:not(.foot-item4) {
         display: block;        
+    }
+
+    .foot-nav .item {
+        padding-left: 2rem;
     }
 
     .foot-item4{
         display: none;
     }
+
+   
 }
 
 @media (min-width: 1024px){
@@ -177,13 +184,11 @@ footer {
     }
 
     .main-nav .item{
-        background-color: gainsboro;
+        background-color: rgb(235, 235, 235);
     }
 
-
-
     /*Portfolio Section*/
-    .itemp {        
+    .portfolio-item {        
         flex: 1 33%;        
     }
 
