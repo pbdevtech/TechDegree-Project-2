@@ -84,6 +84,22 @@ span {
     background-color: ghostwhite;    
 }
 
+/*Skills - Section*/
+/*.fit-picture {
+    width: 50%;
+    height: 50%;
+    max-width: 100%;    
+}*/
+
+.skills-section {
+    margin-top: 2rem;
+    background-color: ghostwhite;
+}
+
+.skills-item {
+    border: 1px solid black;
+}
+
 /*Contact - Section*/
 .contact-info {
     padding: 1rem 0 0;
@@ -104,7 +120,7 @@ span {
     font-weight: bold;
 }
 
-.foot-nav .item:not(.foot-item4) {
+.foot-nav .item:not(.foot-item5) {
     display: none;
 }
 
@@ -116,7 +132,8 @@ span {
     .main-nav,
     .foot-nav,    
     .portfolio-container,
-    .intro {
+    .intro,
+    .skills-container {
         display: flex;        
     }  
 
@@ -150,6 +167,12 @@ span {
         flex-wrap: wrap;        
     }
 
+    /*Skills Section*/
+    .skills-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     
     /*Footer Nav Bar*/
     .footer-nav {                
@@ -160,7 +183,7 @@ span {
         font-weight: bold;
     }
 
-    .foot-nav .item:not(.foot-item4) {
+    .foot-nav .item:not(.foot-item5) {
         display: block;        
     }
 
@@ -168,7 +191,7 @@ span {
         padding-left: 2rem;
     }
 
-    .foot-item4{
+    .foot-item5{
         display: none;
     }
 
