@@ -8,7 +8,7 @@
 
 body {
     line-height: 1.6;
-    background-color: rgb(243, 243, 243);   
+    background-color: rgb(214, 208, 208);   
     text-align: center;
 }
 
@@ -17,7 +17,9 @@ body {
 }
 
 h1{
-    margin: 1rem 1rem;
+    font-weight: bold;
+    margin: auto;    
+    padding: .5rem;
 }
 
 h2 {
@@ -73,10 +75,21 @@ span {
     margin: 5px 1rem;
 }
 
+.name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    margin: 1rem;
+    padding: 0;    
+}
+
+/*Intro - Section*/
 .stu-pic{
     width: 75%;
-    height: 75%;
-    
+    height: 75%;    
+}
+
+.intro-statement {
+    margin-top: 1rem;
 }
 
 /*Portfolio - Section*/
@@ -85,19 +98,15 @@ span {
 }
 
 /*Skills - Section*/
-/*.fit-picture {
-    width: 50%;
-    height: 50%;
-    max-width: 100%;    
-}*/
-
 .skills-section {
     margin-top: 2rem;
     background-color: ghostwhite;
 }
 
-.skills-item {
-    border: 1px solid black;
+.skills-picture {
+    width: 30%;
+    height: 30%;
+
 }
 
 /*Contact - Section*/
@@ -124,6 +133,11 @@ span {
     display: none;
 }
 
+.footer-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;        
+}
+
 
 /*@media Styles*/
 @media (min-width: 768px) {
@@ -135,8 +149,9 @@ span {
     .intro,
     .skills-container {
         display: flex;        
-    }  
-
+    }
+    
+    /*Intro  - Section*/
     .intro {
         flex-direction: row-reverse;
         margin: 0 1rem;
@@ -147,6 +162,10 @@ span {
         flex: 2;
     }
 
+    .intro-item {
+        margin: 5px;
+    }
+
     /*Header Nav Bar*/
     .main-header {
         flex-direction: column;
@@ -154,10 +173,8 @@ span {
     }
 
     .main-nav .item{
-        background-color: rgb(243, 243, 243);
+        background-color: rgb(214, 208, 208);
     }
-
-
 
     /*Portfolio Section*/
     .portfolio-item {        
@@ -173,6 +190,11 @@ span {
         justify-content: space-between;
     }
 
+    .skills-picture {
+        width: 30%;
+        height: 50%;
+    
+    }
     
     /*Footer Nav Bar*/
     .footer-nav {                
@@ -194,7 +216,6 @@ span {
     .foot-item5{
         display: none;
     }
-
    
 }
 
@@ -207,7 +228,7 @@ span {
     }
 
     .main-nav .item{
-        background-color: rgb(235, 235, 235);
+        background-color: rgb(214, 208, 208);
     }
 
     /*Portfolio Section*/
@@ -216,8 +237,23 @@ span {
     }
 
     .portfolio-container {
-        flex-wrap: wrap;
+        flex-wrap: wrap;    
+    }
+}
+
+@media (min-width: 1440px) {
+
+    body {
+        max-width: 50%;
+        margin: auto;        
     }
 
+    .main-nav {
+        margin: 1rem -1rem;
+    }
+
+    .name {
+        margin: 1rem 0;
+    }
 
 }
