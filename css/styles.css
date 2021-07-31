@@ -69,6 +69,10 @@ span {
 
 /*Class Styles*/
 
+.section-heading {
+    font-size: x-large;
+}
+
 /*Header - Navigation*/
 .main-nav .item{
     background-color: ghostwhite;
@@ -83,6 +87,10 @@ span {
 }
 
 /*Intro - Section*/
+.intro {
+    padding: 2rem 0;
+    
+}
 .stu-pic{
     width: 75%;
     height: 75%;    
@@ -156,10 +164,6 @@ span {
         flex-direction: row-reverse;
         margin: 0 1rem;
         padding: 1rem;
-    }
-
-    .stu-pic {
-        flex: 2;
     }
 
     .intro-item {
